@@ -4,7 +4,7 @@ sys.path.insert(0, '.')
 import numpy as np
 from datasets.load_features import load_features
 from scipy.spatial.distance import cdist
-from CBIR.evulation import score_ap_from_ranks_1
+from CBIR.evaluation import score_ap_from_ranks_1
 import argparse
 
 
