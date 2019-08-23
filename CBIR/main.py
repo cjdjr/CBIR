@@ -11,7 +11,9 @@ import argparse
 def retrieval_pipeline_simple(dataset_name):
     features_obj, gt_obj = load_features(dataset_name) # load features
     query_ids = list(gt_obj.keys())
+    print(query_ids)
     query_features = np.asarray([features_obj[query_id] for query_id in query_ids], np.float32)
+    print(query_features)
     gallery_ids = list(features_obj.keys())
     gallery_features = np.asarray([features_obj[gallery_id] for gallery_id in gallery_ids], np.float32)
     # compute the distance
